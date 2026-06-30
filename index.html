@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bernardo Valente | AI Security, Machine Learning & Generative AI</title>
+  <meta name="description" content="Bernardo Valente is a PhD Candidate in Cybersecurity and Machine Learning Researcher focused on AI Security, LLM Security, Generative AI, anomaly detection, Transformer models and secure AI systems." />
+  <meta name="keywords" content="Bernardo Valente, AI Security, LLM Security, Machine Learning, Deep Learning, Cybersecurity, Generative AI, RAG, Adversarial Machine Learning, Prompt Injection, Data Poisoning, Model Extraction, Anomaly Detection, Transformers, PyTorch, LangChain" />
+  <meta name="author" content="Bernardo Valente" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="Bernardo Valente | AI Security, Machine Learning & Generative AI" />
+  <meta property="og:description" content="PhD Candidate in Cybersecurity and Machine Learning Researcher working on AI Security, LLM Security, Generative AI, anomaly detection and Transformer-based systems." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bernardo9830.github.io/" />
+  <meta property="og:image" content="https://bernardo9830.github.io/linkedin_preview.jpeg" />
+  <meta property="og:image:secure_url" content="https://bernardo9830.github.io/linkedin_preview.jpeg" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="627" />
+  <meta property="og:image:alt" content="Bernardo Valente — AI Security, Machine Learning and Generative AI portfolio preview" />
+  <meta name="twitter:title" content="Bernardo Valente | AI Security, Machine Learning & Generative AI" />
+  <meta name="twitter:description" content="Portfolio personale su AI Security, LLM Security, Generative AI, Anomaly Detection e Transformer-based systems." />
+  <meta name="twitter:image" content="https://bernardo9830.github.io/linkedin_preview.jpeg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://bernardo9830.github.io/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Bernardo Valente",
+    "jobTitle": "PhD Candidate in Cybersecurity and Machine Learning Researcher",
+    "url": "https://bernardo9830.github.io/",
+    "image": "https://bernardo9830.github.io/linkedin_preview.jpeg",
+    "email": "mailto:bernardovalente9811@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/bernardo-valente-bb1676206/",
+      "https://github.com/bernardo9830"
+    ],
+    "alumniOf": [
+      "Università della Calabria",
+      "IMT School for Advanced Studies Lucca"
+    ],
+    "knowsAbout": [
+      "AI Security",
+      "LLM Security",
+      "Machine Learning",
+      "Deep Learning",
+      "Generative AI",
+      "Adversarial Machine Learning",
+      "Prompt Injection",
+      "Data Poisoning",
+      "Model Extraction",
+      "Anomaly Detection",
+      "Transformer Architectures",
+      "Retrieval-Augmented Generation",
+      "Time-Series Analysis"
+    ]
+  }
+  </script>
+  <style>
+    :root{
+      --bg:#f6f4ee;
+      --bg-soft:#ece8dc;
+      --card:#fffdf7;
+      --ink:#121820;
+      --ink-soft:#29313b;
+      --muted:#68717c;
+      --line:#d9d3c3;
+      --dark:#111820;
+      --dark-2:#1b2632;
+      --light:#f6f4ee;
+      --teal:#4f8f86;
+      --teal-soft:#dcebe7;
+      --amber:#c7792f;
+      --amber-soft:#f2dfc8;
+      --violet:#6e66b3;
+      --radius:22px;
+      --radius-sm:14px;
+      --shadow:0 24px 70px rgba(18,24,32,.12);
+      --serif:"Source Serif 4", Georgia, serif;
+      --sans:"IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --mono:"IBM Plex Mono", "SF Mono", Consolas, monospace;
+    }
+
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:var(--sans);
+      background:var(--bg);
+      color:var(--ink);
+      line-height:1.6;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    a{color:inherit;text-decoration:none}
+    .wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+    .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip:focus{left:24px;top:24px;width:auto;height:auto;background:var(--amber);color:#fff;padding:10px 14px;border-radius:999px;z-index:1000}
+
+    /* Navigation */
+    .nav{
+      position:sticky;top:0;z-index:100;
+      background:rgba(246,244,238,.88);
+      border-bottom:1px solid rgba(217,211,195,.9);
+      backdrop-filter:blur(14px);
+    }
+    .nav-inner{height:66px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .brand{font-family:var(--mono);font-weight:600;font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+    .brand span{color:var(--amber)}
+    .nav ul{display:flex;gap:24px;list-style:none;align-items:center}
+    .nav a{font-family:var(--mono);font-size:12px;text-transform:uppercase;letter-spacing:.05em;color:var(--muted);transition:.2s ease}
+    .nav a:hover{color:var(--amber)}
+    .nav-cta{border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--ink)!important;background:rgba(255,255,255,.35)}
+    @media(max-width:920px){.nav ul{display:none}}
+
+    /* Hero */
+    .hero{position:relative;overflow:hidden;background:linear-gradient(135deg,var(--dark),#182331 52%,#26313c);color:var(--light);padding:100px 0 78px}
+    .hero:before{content:"";position:absolute;inset:-25%;background:radial-gradient(circle at 22% 24%,rgba(79,143,134,.32),transparent 28%),radial-gradient(circle at 82% 22%,rgba(199,121,47,.30),transparent 25%),radial-gradient(circle at 66% 82%,rgba(110,102,179,.24),transparent 26%);filter:blur(2px);pointer-events:none}
+    .hero .wrap{position:relative;display:grid;grid-template-columns:1.07fr .93fr;gap:50px;align-items:center}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:#a9d2cc;margin-bottom:22px}
+    .eyebrow:before{content:"";width:26px;height:1px;background:#a9d2cc}
+    h1{font-family:var(--serif);font-size:clamp(46px,7vw,82px);line-height:.95;letter-spacing:-.035em;margin-bottom:18px}
+    .role{font-family:var(--serif);font-size:clamp(23px,2.4vw,33px);line-height:1.16;color:#ffd2a0;margin-bottom:22px;max-width:720px}
+    .hero-desc{font-size:18px;color:#c5ccd4;max-width:660px;margin-bottom:28px}
+    .hero-meta{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px}
+    .pill{font-family:var(--mono);font-size:12px;color:#e9edf0;border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.07);border-radius:999px;padding:8px 12px}
+    .actions{display:flex;flex-wrap:wrap;gap:12px}
+    .btn{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:12px 18px;font-family:var(--mono);font-size:12px;letter-spacing:.03em;transition:.22s ease;border:1px solid rgba(255,255,255,.18)}
+    .btn.primary{background:var(--amber);border-color:var(--amber);color:#fff}
+    .btn.secondary{background:rgba(255,255,255,.06);color:#fff}
+    .btn:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(0,0,0,.18)}
+
+    .hero-panel{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:28px;padding:26px;box-shadow:0 30px 90px rgba(0,0,0,.24);backdrop-filter:blur(12px)}
+    .quote{padding:24px;border-radius:20px;background:rgba(17,24,32,.46);border:1px solid rgba(255,255,255,.10);margin-bottom:18px}
+    .quote p{font-family:var(--serif);font-size:26px;line-height:1.2;color:#fff;margin-bottom:10px}
+    .quote cite{font-family:var(--mono);font-size:12px;color:#a9d2cc;font-style:normal}
+    .signal-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+    .signal{padding:16px;border-radius:16px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11)}
+    .signal .k{font-family:var(--mono);font-size:11px;color:#a9d2cc;text-transform:uppercase;letter-spacing:.08em;margin-bottom:6px}
+    .signal .v{font-size:15px;color:#f2f2f0;font-weight:600}
+    @media(max-width:880px){.hero{padding:84px 0 60px}.hero .wrap{grid-template-columns:1fr}.hero-panel{order:-1}.signal-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:560px){.signal-grid{grid-template-columns:1fr}.wrap{padding:0 20px}}
+
+    /* Shared */
+    section{padding:86px 0;border-bottom:1px solid var(--line)}
+    .section-head{display:grid;grid-template-columns:260px 1fr;gap:34px;align-items:start;margin-bottom:36px}
+    .section-index{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--amber);text-transform:uppercase;padding-top:8px}
+    .section-head h2{font-family:var(--serif);font-size:clamp(31px,4vw,48px);line-height:1.03;letter-spacing:-.025em;margin-bottom:10px}
+    .section-head p{color:var(--muted);max-width:720px;font-size:17px}
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+    .reveal.in{opacity:1;transform:translateY(0)}
+    @media(max-width:760px){.section-head{grid-template-columns:1fr;gap:8px}section{padding:64px 0}}
+
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{font-family:var(--mono);font-size:11px;letter-spacing:.02em;border:1px solid var(--line);background:rgba(255,255,255,.55);color:var(--ink-soft);padding:6px 9px;border-radius:999px}
+
+    /* About */
+    .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:stretch}
+    .about-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:30px;box-shadow:var(--shadow)}
+    .about-card .lead{font-family:var(--serif);font-size:25px;line-height:1.3;margin-bottom:16px;color:var(--ink)}
+    .about-card p{color:var(--ink-soft);margin-bottom:16px}
+    .stats{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .stat{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:22px}
+    .stat strong{font-family:var(--serif);font-size:34px;line-height:1;color:var(--amber);display:block;margin-bottom:6px}
+    .stat span{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+    @media(max-width:850px){.about-grid{grid-template-columns:1fr}}
+
+    /* Focus */
+    .focus-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .focus-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:.22s ease;min-height:240px}
+    .focus-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(199,121,47,.45)}
+    .focus-card .num{font-family:var(--mono);font-size:12px;color:var(--amber);display:block;margin-bottom:18px}
+    .focus-card h3{font-family:var(--serif);font-size:24px;line-height:1.1;margin-bottom:12px}
+    .focus-card p{color:var(--muted);font-size:15px}
+    @media(max-width:980px){.focus-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:620px){.focus-grid{grid-template-columns:1fr}}
+
+    /* PhD */
+    .phd{background:var(--dark);color:var(--light);border-bottom:none}
+    .phd .section-index{color:#ffd2a0}
+    .phd .section-head p{color:#bbc3cd}
+    .phd-grid{display:grid;grid-template-columns:.86fr 1.14fr;gap:22px}
+    .phd-title{background:linear-gradient(135deg,rgba(255,255,255,.10),rgba(255,255,255,.04));border:1px solid rgba(255,255,255,.12);border-radius:var(--radius);padding:28px}
+    .phd-title h3{font-family:var(--serif);font-size:32px;line-height:1.12;margin-bottom:14px;color:#fff}
+    .phd-title p{color:#c5ccd4;margin-bottom:20px}
+    .phd-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+    .phd-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.11);border-radius:18px;padding:20px}
+    .phd-card h4{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#a9d2cc;margin-bottom:9px}
+    .phd-card p{color:#d6dbe0;font-size:15px}
+    @media(max-width:860px){.phd-grid{grid-template-columns:1fr}.phd-cards{grid-template-columns:1fr}}
+
+    /* Skills */
+    .skill-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+    .skill-block{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px}
+    .skill-block h3{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);margin-bottom:12px}
+    .skill-block p{color:var(--ink-soft);font-size:14.5px}
+    @media(max-width:760px){.skill-grid{grid-template-columns:1fr}}
+
+    /* Timeline */
+    .timeline{display:grid;gap:18px}
+    .timeline-item{display:grid;grid-template-columns:230px 1fr;gap:26px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 14px 40px rgba(18,24,32,.06)}
+    .timeline-date{font-family:var(--mono);font-size:12px;color:var(--teal);letter-spacing:.04em;text-transform:uppercase;padding-top:5px}
+    .timeline-item h3{font-family:var(--serif);font-size:25px;line-height:1.15;margin-bottom:4px}
+    .timeline-org{font-family:var(--mono);font-size:12px;color:var(--muted);margin-bottom:14px}
+    .timeline-item ul{padding-left:18px;color:var(--ink-soft);margin-bottom:14px}
+    .timeline-item li{margin-bottom:7px}
+    .stack{font-family:var(--mono);font-size:12px;color:var(--muted)}
+    .stack b{color:var(--ink)}
+    @media(max-width:760px){.timeline-item{grid-template-columns:1fr;gap:8px}}
+
+    /* Education */
+    .edu-list{display:grid;gap:10px}
+    .edu{display:grid;grid-template-columns:190px 1fr;background:rgba(255,255,255,.45);border:1px solid var(--line);border-radius:16px;padding:18px}
+    .edu-date{font-family:var(--mono);font-size:12px;color:var(--teal);text-transform:uppercase;letter-spacing:.04em}
+    .edu h3{font-family:var(--serif);font-size:21px;margin-bottom:3px}
+    .edu p{color:var(--muted);font-size:14.5px}
+    @media(max-width:700px){.edu{grid-template-columns:1fr;gap:5px}}
+
+    /* Projects */
+    .project-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+    .project{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px;transition:.22s ease}
+    .project:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:rgba(79,143,134,.45)}
+    .project-top{display:flex;justify-content:space-between;gap:14px;margin-bottom:10px}
+    .project h3{font-family:var(--serif);font-size:24px;line-height:1.1}
+    .project .type{font-family:var(--mono);font-size:11px;color:var(--teal);text-transform:uppercase;letter-spacing:.07em;white-space:nowrap;padding-top:5px}
+    .project p{color:var(--muted);font-size:15px;margin-bottom:14px}
+    @media(max-width:820px){.project-grid{grid-template-columns:1fr}}
+
+    /* Publications + language */
+    .pub-list{display:grid;gap:16px}
+    .pub{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-sm);padding:20px}
+    .pub h3{font-family:var(--serif);font-size:21px;line-height:1.22;margin-bottom:7px}
+    .pub p{font-size:14.5px;color:var(--muted);margin-bottom:8px}
+    .doi{font-family:var(--mono);font-size:12px;color:var(--teal);word-break:break-word}
+    .profile-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+    .profile-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+    .profile-card h3{font-family:var(--serif);font-size:25px;margin-bottom:12px}
+    .profile-card p{color:var(--muted);margin-bottom:12px}
+    @media(max-width:760px){.profile-grid{grid-template-columns:1fr}}
+
+    footer{background:var(--dark);color:var(--light);padding:72px 0 34px;border-bottom:none}
+    .footer-grid{display:grid;grid-template-columns:1fr auto;gap:26px;align-items:start;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:32px;margin-bottom:24px}
+    footer h2{font-family:var(--serif);font-size:42px;line-height:1.06;margin-bottom:12px}
+    footer p{color:#bbc3cd;max-width:620px}
+    .footer-links{display:flex;flex-wrap:wrap;gap:10px;justify-content:flex-end}
+    .footer-links a{font-family:var(--mono);font-size:12px;border:1px solid rgba(255,255,255,.18);border-radius:999px;padding:10px 13px;color:#fff;transition:.22s ease}
+    .footer-links a:hover{border-color:var(--amber);color:#ffd2a0}
+    .footnote{font-family:var(--mono);font-size:12px;color:#8c96a1;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+    @media(max-width:760px){.footer-grid{grid-template-columns:1fr}.footer-links{justify-content:flex-start}}
+
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <nav class="nav" aria-label="Primary navigation">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">B<span>·</span>Valente</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#phd">PhD</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a class="nav-cta" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header id="top" class="hero">
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Applied Mathematics · AI Security · Generative AI</span>
+        <h1>Bernardo<br />Valente</h1>
+        <p class="role">PhD Candidate in Cybersecurity & Machine Learning Researcher</p>
+        <p class="hero-desc">I study and build secure, reliable and explainable AI systems across LLM security, adversarial machine learning, anomaly detection, Transformer models and Generative AI applications.</p>
+        <div class="hero-meta" aria-label="Core profile keywords">
+          <span class="pill">AI Security</span>
+          <span class="pill">LLM Security</span>
+          <span class="pill">Machine Learning</span>
+          <span class="pill">RAG & Generative AI</span>
+          <span class="pill">Anomaly Detection</span>
+        </div>
+        <div class="actions">
+          <a class="btn primary" href="mailto:bernardovalente9811@gmail.com">Contact me</a>
+          <a class="btn secondary" href="https://www.linkedin.com/in/bernardo-valente-bb1676206/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn secondary" href="https://github.com/bernardo9830" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+
+      <aside class="hero-panel reveal" aria-label="Professional quote and focus areas">
+        <div class="quote">
+          <p>“Security is not a product, but a process.”</p>
+          <cite>— Bruce Schneier</cite>
+        </div>
+        <div class="signal-grid">
+          <div class="signal"><div class="k">Research</div><div class="v">AI Security & LLM Robustness</div></div>
+          <div class="signal"><div class="k">Systems</div><div class="v">RAG, Vector Search & Secure AI</div></div>
+          <div class="signal"><div class="k">Models</div><div class="v">Transformers, Autoencoders, LLMs</div></div>
+          <div class="signal"><div class="k">Detection</div><div class="v">Anomalies, Malware & Data Leakage</div></div>
+        </div>
+      </aside>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-index">01 · About</div>
+          <div>
+            <h2>Mathematical rigor for secure and reliable AI.</h2>
+            <p>A profile at the intersection of applied mathematics, machine learning, cybersecurity and generative AI.</p>
+          </div>
+        </div>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <p class="lead">I translate complex AI problems into rigorous models, practical pipelines and measurable security questions.</p>
+            <p>I hold a BSc and MSc in Mathematics from the Università della Calabria, with a master’s thesis focused on the mathematical analysis of the self-attention mechanism in Transformer architectures.</p>
+            <p>My applied research experience at ICAR-CNR focused on anomaly detection for industrial processes, combining heterogeneous data, time-series analysis, neural architectures, Transformer-based models and supervised/unsupervised learning.</p>
+            <p>My current PhD research investigates emerging risks of AI systems, with focus on LLM security, adversarial attacks, prompt injection, data poisoning, model extraction, watermarking and robust generative AI.</p>
+          </div>
+          <div class="stats reveal" aria-label="Profile highlights">
+            <div class="stat"><strong>2025</strong><span>PhD in Cybersecurity</span></div>
+            <div class="stat"><strong>2</strong><span>Scientific publications</span></div>
+            <div class="stat"><strong>4+</strong><span>AI / ML research projects</span></div>
+            <div class="stat"><strong>ML</strong><span>Security, RAG, Time Series</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-index">02 · Focus</div>
+          <div>
+            <h2>Research and engineering focus.</h2>
+            <p>The portfolio is built around recruiter-visible areas: AI Security, Generative AI, Machine Learning and applied anomaly detection.</p>
+          </div>
+        </div>
+        <div class="focus-grid">
+          <article class="focus-card reveal">
+            <span class="num">01</span>
+            <h3>AI & LLM Security</h3>
+            <p>Robustness, adversarial machine learning, prompt injection, data poisoning, model extraction, watermarking and secure generative AI systems.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="num">02</span>
+            <h3>Generative AI & RAG</h3>
+            <p>LLM applications, Retrieval-Augmented Generation, vector databases, semantic search, embeddings, LangChain and OpenAI API workflows.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="num">03</span>
+            <h3>Anomaly Detection</h3>
+            <p>Supervised and unsupervised models, Transformer Autoencoders, sensor data, heterogeneous data integration and time-series analysis.</p>
+          </article>
+          <article class="focus-card reveal">
+            <span class="num">04</span>
+            <h3>Transformer Theory</h3>
+            <p>Mathematical analysis of self-attention, dynamical systems, clustering phenomena, model memorization and privacy risks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="phd" class="phd">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-index">03 · Current PhD Research</div>
+          <div>
+            <h2>Emerging risks of Artificial Intelligence.</h2>
+            <p>Models and techniques for integrated security, with emphasis on LLMs, Transformer-based models, adversarial robustness and defensive AI.</p>
+          </div>
+        </div>
+        <div class="phd-grid">
+          <div class="phd-title reveal">
+            <h3>National PhD in Cybersecurity</h3>
+            <p><strong>IMT School for Advanced Studies Lucca</strong><br />2025 – current</p>
+            <div class="chips">
+              <span class="chip">AI Security</span>
+              <span class="chip">LLM Security</span>
+              <span class="chip">Adversarial ML</span>
+              <span class="chip">Secure Generative AI</span>
+            </div>
+          </div>
+          <div class="phd-cards reveal">
+            <article class="phd-card"><h4>Threats</h4><p>Prompt injection, jailbreak attacks, data poisoning, backdoor attacks, model extraction, model inversion, membership inference and data leakage.</p></article>
+            <article class="phd-card"><h4>Defenses</h4><p>Adversarial robustness, watermarking, RAG security, anomaly detection, information-flow control and reliability-oriented evaluation.</p></article>
+            <article class="phd-card"><h4>Theory</h4><p>Long-term dynamics of models under adversarial perturbations and sensitivity of deep architectures to attack surfaces.</p></article>
+            <article class="phd-card"><h4>Applications</h4><p>Malware detection, obfuscated code detection, time-series anomaly detection and monitoring of abnormal system behavior.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-index">04 · Skills & Tools</div>
+          <div>
+            <h2>Technical skills with recruiter-visible keywords.</h2>
+            <p>Compact, searchable and aligned with AI, Data Science, Machine Learning, Cybersecurity and Generative AI roles.</p>
+          </div>
+        </div>
+        <div class="skill-grid">
+          <div class="skill-block reveal"><h3>AI / ML / Data Science</h3><p>Machine Learning · Deep Learning · Anomaly Detection · Time-Series Analysis · Feature Engineering · Model Evaluation · Hyperparameter Tuning · Autoencoders · Transformer Autoencoders · Statistical Analysis</p></div>
+          <div class="skill-block reveal"><h3>Generative AI / NLP</h3><p>LLMs · Generative AI · RAG · Prompt Engineering · Semantic Search · Embeddings · Vector Search · Document Chunking · Retrieval · Reranking · Hugging Face Transformers · Sentence Transformers · LangChain · OpenAI API</p></div>
+          <div class="skill-block reveal"><h3>AI Security / Cybersecurity</h3><p>AI Security · LLM Security · Adversarial Machine Learning · Prompt Injection · Jailbreak Attacks · Data Poisoning · Backdoor Attacks · Model Extraction · Data Leakage · RAG Security · Watermarking · Malware Detection · Threat Modeling</p></div>
+          <div class="skill-block reveal"><h3>Programming / Libraries</h3><p>Python · SQL · MATLAB · PyTorch · scikit-learn · XGBoost · pandas · NumPy · SciPy · statsmodels · Matplotlib · seaborn · Plotly · PyWavelets</p></div>
+          <div class="skill-block reveal"><h3>Engineering / MLOps / Tools</h3><p>REST APIs · Flask · FastAPI · Streamlit · Docker · Kubernetes · MLflow · Model Versioning · Experiment Tracking · Model Monitoring · CI/CD · GitHub Actions · Linux · Bash · Git · GitHub · Postman</p></div>
+          <div class="skill-block reveal"><h3>Databases / Cloud / Collaboration</h3><p>MySQL · MongoDB Atlas · Vector Databases · AWS · Azure · Jupyter Notebook · Google Colab · VS Code · Notion · Microsoft Office</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-index">05 · Work Experience</div>
+          <div>
+            <h2>Research and software experience.</h2>
+            <p>From applied ML research at ICAR-CNR to generative AI, RAG and chatbot engineering.</p>
+          </div>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-date">07/2024 – 11/2025</div>
+            <div>
+              <h3>Machine Learning Researcher / Research Fellow</h3>
+              <div class="timeline-org">ICAR-CNR · Istituto di Calcolo e Reti ad Alte Prestazioni · Cosenza, Italy</div>
+              <ul>
+                <li>Developed Machine Learning and Deep Learning methodologies for anomaly detection on heterogeneous industrial data.</li>
+                <li>Integrated time-series, tabular and textual information for automatic detection of abnormal events and operational risks.</li>
+                <li>Designed hybrid pipelines based on unsupervised representation learning, autoencoders, embeddings and supervised classification.</li>
+                <li>Implemented Transformer-based architectures, including Transformer Autoencoders, for sequential sensor data and long-range dependencies.</li>
+                <li>Applied feature engineering, lag-correlation, signal decomposition, residual analysis and model validation workflows.</li>
+              </ul>
+              <p class="stack"><b>Stack:</b> Python · PyTorch · scikit-learn · pandas · NumPy · NLTK · Matplotlib · seaborn · Git</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-date">11/2023 – 03/2024</div>
+            <div>
+              <h3>Software Developer Intern</h3>
+              <div class="timeline-org">IET S.r.l. Società Benefit · Cosenza, Italy</div>
+              <ul>
+                <li>Designed and developed an intelligent customer-support chatbot based on Generative AI and Retrieval-Augmented Generation.</li>
+                <li>Implemented document retrieval through vector databases, embeddings, semantic search and cosine-similarity ranking.</li>
+                <li>Integrated GPT-3.5 through OpenAI API to generate contextual responses from retrieved documents.</li>
+                <li>Developed conversational memory, Flask backend components, MySQL integration and REST API workflows.</li>
+              </ul>
+              <p class="stack"><b>Stack:</b> Python · LangChain · OpenAI API · MongoDB Atlas Vector Search · Flask · MySQL · REST APIs · Streamlit</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-index">06 · Education</div>
+          <div>
+            <h2>Education and formal training.</h2>
+            <p>A mathematical foundation supporting rigorous AI, ML and cybersecurity research.</p>
+          </div>
+        </div>
+        <div class="edu-list reveal">
+          <div class="edu"><div class="edu-date">2025 – current</div><div><h3>National PhD in Cybersecurity</h3><p>IMT School for Advanced Studies Lucca · AI Security, LLM Security, adversarial machine learning and secure AI systems.</p></div></div>
+          <div class="edu"><div class="edu-date">07/2025</div><div><h3>Artificial Intelligence for a Secure Society — Summer School</h3><p>SERICS Academy · Artificial Intelligence, Cybersecurity, Generative AI, Trustworthy AI, Explainable AI, Network Science and Machine/Deep Learning.</p></div></div>
+          <div class="edu"><div class="edu-date">09/2021 – 04/2024</div><div><h3>MSc in Applied Mathematics</h3><p>Università della Calabria · 110/110 cum laude · Thesis on Transformers, self-attention, dynamical systems, clustering and data privacy.</p></div></div>
+          <div class="edu"><div class="edu-date">09/2017 – 07/2021</div><div><h3>BSc in Mathematics</h3><p>Università della Calabria · Thesis on population growth models based on differential equations.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-index">07 · Selected Projects</div>
+          <div>
+            <h2>Projects that reinforce the AI security profile.</h2>
+            <p>Selected work across steganography detection, AI security, Transformer analysis, Generative AI and RAG.</p>
+          </div>
+        </div>
+        <div class="project-grid">
+          <article class="project reveal">
+            <div class="project-top"><h3>StegoDetector</h3><span class="type">Detection</span></div>
+            <p>Detection of malicious or steganographic content through Least Significant Bits feature extraction, PyTorch-based deep learning models and evaluation with ROC-AUC, PR-AUC, precision, recall and F1-score.</p>
+            <div class="chips"><span class="chip">Python</span><span class="chip">PyTorch</span><span class="chip">LSB</span><span class="chip">ROC-AUC</span><span class="chip">PR-AUC</span></div>
+          </article>
+          <article class="project reveal">
+            <div class="project-top"><h3>PhD Cybersecurity Research Project</h3><span class="type">AI Security</span></div>
+            <p>Research project on AI Security, LLM Security, adversarial machine learning, prompt injection, data poisoning, model extraction, watermarking, RAG security and secure generative AI systems.</p>
+            <div class="chips"><span class="chip">LLM Security</span><span class="chip">Adversarial ML</span><span class="chip">RAG Security</span><span class="chip">Watermarking</span></div>
+          </article>
+          <article class="project reveal">
+            <div class="project-top"><h3>Transformer Attention & Data Privacy</h3><span class="type">Research</span></div>
+            <p>Mathematical analysis of self-attention in Transformer architectures and study of model memorization, training-set replication, privacy risks and data ownership in generative models.</p>
+            <div class="chips"><span class="chip">Transformers</span><span class="chip">Self-Attention</span><span class="chip">Dynamical Systems</span><span class="chip">Data Privacy</span></div>
+          </article>
+          <article class="project reveal">
+            <div class="project-top"><h3>Generative AI Chatbot with RAG</h3><span class="type">GenAI</span></div>
+            <p>Customer-support chatbot using Retrieval-Augmented Generation, semantic search, embeddings, vector databases, cosine similarity and OpenAI API integration.</p>
+            <div class="chips"><span class="chip">LangChain</span><span class="chip">OpenAI API</span><span class="chip">Vector Search</span><span class="chip">Flask</span><span class="chip">MySQL</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-index">08 · Publications</div>
+          <div>
+            <h2>Scientific publications.</h2>
+            <p>Research outputs connected to AI, industrial safety, risk analysis and anomaly detection.</p>
+          </div>
+        </div>
+        <div class="pub-list reveal">
+          <article class="pub">
+            <h3>Clustering for Learning From Safety-Related Undesired Events: Application to the Iron and Steel Industries</h3>
+            <p>Cocca, P., Zorzi, M., Marciano, F., Tomasoni, G., Guarascio, M., Valente, B., Pisani, F. S., Ritacco, E., & Stefana, E. · ESREL-SRA Europe Conference, 2025.</p>
+            <div class="doi">DOI: 10.3850/978-981-94-3281-3_ESREL-SRA-E2025-P5729-cd</div>
+          </article>
+          <article class="pub">
+            <h3>Enhancing Safety in the Iron and Steel Industry through Artificial Intelligence</h3>
+            <p>Cocca, P., Guarascio, M., Pisani, F. S., Tomasoni, G., Valente, B., & Zorzi, M. · ISIEA 2025, Bozen-Bolzano.</p>
+            <div class="doi">DOI: 10.1007/978-3-032-03698-8_14</div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="languages">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <div class="section-index">09 · Languages & Profile</div>
+          <div>
+            <h2>Languages, soft skills and interests.</h2>
+            <p>A concise personal profile to complement the technical portfolio.</p>
+          </div>
+        </div>
+        <div class="profile-grid">
+          <div class="profile-card reveal">
+            <h3>Languages</h3>
+            <p><strong>Italian:</strong> Native speaker.</p>
+            <p><strong>English:</strong> B1 / intermediate level, used for scientific papers, technical documentation, research materials and international AI, ML and cybersecurity content.</p>
+          </div>
+          <div class="profile-card reveal">
+            <h3>Soft Skills & Interests</h3>
+            <p>Analytical problem solving, rigorous thinking, technical communication, team collaboration, continuous learning, adaptability and scientific curiosity.</p>
+            <p>Interests: scientific non-fiction, reading, running, travel and new cultures, gaming, films and TV series.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div>
+          <h2>Let’s talk about secure AI.</h2>
+          <p>Open to research and professional conversations on AI Security, Machine Learning, Generative AI, LLM Security, anomaly detection and applied mathematics.</p>
+        </div>
+        <div class="footer-links">
+          <a href="mailto:bernardovalente9811@gmail.com">Email</a>
+          <a href="https://www.linkedin.com/in/bernardo-valente-bb1676206/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://github.com/bernardo9830" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+      <div class="footnote">
+        <span>Bernardo Valente · Crotone, Calabria, Italy</span>
+        <span>AI Security · Machine Learning · Generative AI · Applied Mathematics</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      const items = document.querySelectorAll('.reveal');
+      if(!('IntersectionObserver' in window)){
+        items.forEach(el => el.classList.add('in'));
+        return;
+      }
+      const observer = new IntersectionObserver((entries)=>{
+        entries.forEach(entry=>{
+          if(entry.isIntersecting){
+            entry.target.classList.add('in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {threshold:.14});
+      items.forEach(el => observer.observe(el));
+    })();
+  </script>
+</body>
+</html>
